@@ -25,7 +25,7 @@ def player():
 # 1 player game against stockfish
 def bot():
     board = chess.Board()
-    engine = chess.engine.SimpleEngine.popen_uci(r"D:\repository\SimpleChess\stockfish_15_win_x64_avx2\stockfish_15_x64_avx2.exe")
+    engine = chess.engine.SimpleEngine.popen_uci(r"stockfish_15_win_x64_avx2\stockfish_15_x64_avx2.exe")
     limit = chess.engine.Limit(time=0.1)
     engine.play(board, limit)
     
